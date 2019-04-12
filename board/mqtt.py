@@ -20,6 +20,7 @@ def on_message(client, userdata, msg):
         print (d)
     all_test = TestData.objects.all()
     print ("length", len(all_test))
+
     testdata = TestData()
     testdata.host = device_set[0]
     testdata.lan_ip = device_set[1]
